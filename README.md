@@ -175,4 +175,197 @@ c. Todos los interruptores conectados a 112 V
 
 ![image](https://user-images.githubusercontent.com/116674536/210011974-e5b26fa1-2f33-4c14-9000-2bf477492527.png)
 
+9. Con el teorema de superposición, determine la corriente a través de R3 en la figura 8-70
 
+![image](https://user-images.githubusercontent.com/116674536/210012080-a9c87492-10ae-489c-9206-371d6541d7c1.png)
+
+11. En la figura 8-72 se muestra un circuito comparador. El voltaje de entrada, VENTRADA, se compara con el voltaje de referencia, VREFERENCIA, y se genera una salida negativa si VREFERENCIA > VENTRADA; de lo contrario es positiva. El comparador no carga a una u otra entrada. Si R2 es de 1.0 k, ¿cuál es el intervalo del voltaje de referencia?
+
+![image](https://user-images.githubusercontent.com/116674536/210012172-48851f69-2ecf-4a71-9f27-4e015cfe71d9.png)
+
+13. Determine el voltaje del punto A al punto B en la figura 8-73
+
+![image](https://user-images.githubusercontent.com/116674536/210012187-a7381675-0044-4240-8af0-e7076bd2cf25.png)
+
+15. La figura 8-75 muestra dos redes en escalera. Determine la corriente producida por cada una de las baterías cuando se conectan las terminales A (A a A) y las terminales B (B a B).
+
+![image](https://user-images.githubusercontent.com/116674536/210012227-2874e381-2948-4f92-b8b5-d5e1003b589f.png)
+
+17. Con el teorema de Thevenin, determine la corriente a través de la carga RL en la figura 8-77.
+
+![image](https://user-images.githubusercontent.com/116674536/210012242-9e4765cb-4fc7-4c72-88a7-3eec5e11e638.png)
+
+VTh = (5.6 kΩ / (10 kΩ + 5.6 kΩ)) * 32 V = 11.49 V
+
+IRL = VTh / RL = 11.49 V / 15 kΩ = 0.116 mA = 116 µA
+
+19. Determine el equivalente de Thevenin para el circuito externo al amplificador de la figura 8-79. 
+
+VTh = (776.47 Ω / (100 Ω +776.47Ω)) * (5 – 1) V = 1.1 V
+
+Reemplazando las fuentes de voltaje con cortocircuito:
+
+Las tres resistencias están en paralelo
+
+1/RTh = 1/100 Ω + 1/1200 Ω + 1/2200 Ω = 0.01129 Ω
+
+RTh = 88.57 Ω
+
+21. Determine la corriente a través del resistor de carga en el circuito puente de la figura 8-81.
+
+![image](https://user-images.githubusercontent.com/116674536/210012306-53aaae71-11ad-4112-ac82-b7aa53437237.png)
+
+VTh = (2.2 kΩ / 1 kΩ + 2.2 kΩ) * 12 V – (1.2 kΩ / 0.82 kΩ + 1.2 kΩ) * 12 V = 6.38 V
+
+RTh = (1 kΩ * 2.2 kΩ / 1 kΩ + kΩ) + (0.82 kΩ * 1.2 kΩ/0.82 kΩ + 1.2 kΩ) = 1.17 kΩ
+
+VL = (10 kΩ / 10 kΩ + 1.17 kΩ) * 6.38 V = 1 V
+
+IL = 1 V / 10 kΩ = 0.1 mA = 100 µA
+
+23. Para cada uno de los circuitos mostrados en la figura 8-76, determine el equivalente Norton visto por RL
+
+![image](https://user-images.githubusercontent.com/116674536/210012338-b697bc19-cc65-49be-a7f3-30507fb149d9.png)
+
+Se coloca un cortocircuito entre A y B, teniendo como Rt:
+
+Rt = 100 Ω + 47 Ω + (27Ω * 75Ω / 27Ω + 75Ω) = 166.85 Ω
+
+It = 25 V / 166.85 Ω = 0.1498 A = 149.8 mA
+
+IN = (75 Ω / 75 Ω + 27 Ω) * 149.8 mA = 110.15 mA
+
+Se reemplaza la fuente de voltaje con un cortocircuito:
+
+RN = [(100 Ω + 47 Ω) * 75 Ω] / [(100 Ω + 47 Ω) + 75 Ω] + 27 Ω = 76.66 Ω
+
+25. Con el teorema de Norton, determine el voltaje entre los extremos de R5 en la figura 8-78.
+
+![image](https://user-images.githubusercontent.com/116674536/210012472-454e5b24-9464-44d5-b4cc-08f7086f1109.png)
+
+Rx=(R4│├|R3)+R1)=1/(1/10k+1/5.6k)+1k=4.59 kΩ
+
+R_N=Rx||R2=1/(1/4.59k+1/3.3K)=1.92 kΩ
+
+Ahora para la corriente que pasa por R5, se calculará por Ley de voltajes de Kirchhoff, dividiendo al circuito en
+ mallas y dándole sentido anti horario a las corrientes, la corriente que pasa por R5 se llamará I4:
+ 
+ LVK
+
+Malla 1:
+
+50=5.6k(I1-I2)+3.3k(I1-I4)+1kI1
+
+50=9.9kI1-5.6kI2-3.3kI4
+
+Malla 2:
+
+-50=10k(I2-I3)+5.6k(I2-I1)
+
+-50=-5.6kI1+15.6kI2-10kI3
+
+Malla 3:
+
+I3=10mA
+
+Malla 4:
+
+0=3.3k(I4-I1)
+
+0=-3.3kI1+3.3kI4
+
+Se obtiene así el siguiente sistema de ecuaciones (Teniendo en cuenta que I3=10 mA):
+
+{█(9.9kI1-5.6kI2-3.3kI4=50@-5.6kI1+15.6kI2=50@-3.3kI1+3.3kI4=0)┤
+
+Resolviendo el sistema de ecuaciones se obtiene I4 que es IN como:
+
+I_N=14.8 mA
+
+ Por divisor de corriente se obtiene la corriente que pasa por R5, y por consiguiente encontrar V5:
+ 
+I_R5=(Rt/Rx) I_N=((1/(1/3.3k+1/1.92k))/3.3k)14.8 mA=5.43 mA
+
+V5=I_RLR5=5.43 mA3.3kΩ=17.92 V
+
+27. Determine el circuito equivalente Norton para el puente que aparece en la figura 8-81 sin RL
+
+![image](https://user-images.githubusercontent.com/116674536/210012644-a3f772eb-220e-4882-bf70-666160556eaf.png)
+
+![image](https://user-images.githubusercontent.com/116674536/210012676-e73743ac-355c-46df-a7b8-49f2cc96fb23.png)
+
+29. Aplique el teorema de Norton al circuito de la figura 8-84
+
+![image](https://user-images.githubusercontent.com/116674536/210012699-5adaf1b0-ab35-4edf-a452-ce5a40f4dd64.png)
+
+31. En el circuito de la figura 8-86, determine el valor de RL para transferencia de potencia máxima
+
+![image](https://user-images.githubusercontent.com/116674536/210012738-2fc135ec-1ddc-431c-b359-9302ca1f8b3f.png)
+
+Rx=1/(1/4.7+1/15)=3.59 Ω
+
+Ry=1/(1/(8.2+8.2)+1/3.59)=2.95 Ω
+
+R_TH=2.95+8.2=11.15 Ω
+
+ Por lo tanto, RL para alcanzar su potencia máxima debe ser igual a RTH:
+〖RL=R〗_TH=11.15 Ω
+
+33. ¿Cuáles son los valores de R4 y RTH cuando la potencia máxima se transfiere de la fuente thevenizada a la red en configuración de escalera de la figura 8-87?
+
+ ![image](https://user-images.githubusercontent.com/116674536/210012862-c91c709d-03b3-4746-a2b3-a63a320e41c5.png)
+
+Como al final RTH debe ser igual al RL final, la caída de voltaje en cada uno debe ser el mismo, es decir, los 48V de la fuente se divide para los dos en ambas proporciones:
+
+R_TH=V_RTH/It=24V/(0.5 A)=48Ω
+
+
+Lo mismo para encontrar R4, se debe encontrar RL en función de R4:
+Rx=1/(1/R4+1/69)+10=(690+79R4)/(69+R4)
+
+(Rx||R2)+R1=1/((69+R4)/(690+79R4)+1/47)+22=(6485 R4+118956)/(126 R4+3933)=RL
+
+RL=R_TH
+
+(6485 R4+118956)/(126 R4+3933)=24V/(0.5 A)
+
+3242.5 R4+59478=3024 R4+94392
+
+218.5 R4=34914
+
+R4=160Ω
+
+35. En la figura 8-89, convierta cada red Y en una red delta.
+
+![image](https://user-images.githubusercontent.com/116674536/210012886-7b97c1c8-7b29-4959-91bf-63461fded1f7.png)
+
+(a) Ra=(R1R2+R1R3+R2*R3)/R2=876Ω/22Ω=39.82Ω
+
+Rb=(R1R2+R1R3+R2*R3)/R1=876Ω/12Ω=73Ω
+
+Rc=(R1R2+R1R3+R2*R3)/R3=876Ω/18Ω=48.67Ω
+
+(b) Ra=(R1R2+R1R3+R2*R3)/R2=(69.91 MΩ)/3.3kΩ=21.18 kΩ
+
+Rb=(R1R2+R1R3+R2*R3)/R1=(69.91 MΩ)/(6.8 kΩ)=10.28 kΩ
+
+Rc=(R1R2+R1R3+R2*R3)/R3=(69.91 MΩ)/(4.7 kΩ)=14.87 kΩ
+
+4. VIDEO
+Link: https://www.youtube.com
+
+5. CONCLUSIONES
+
+• Mediante la recopilación de información en un resumen se pudo comprender conceptos básicos de circuitos eléctricos, como circuitos en serie y paralelo, Teoremas de los circuitos serie-paralelo, mismos que son fundamentales al momento de analizar circuitos con cargas y sus propiedades.
+Los teoremas estudiados como el de thevenin y norton son de mucha ayuda para simplificar los circuitos mixtos en serie y paralelo con el objetivo de estudiar mejor las cargas que proporcionan.
+
+• Para el calculo de resistencias voltajes y corrientes dentro de circuitos complejos los teoremas y las maneras de solucion estudiadas en esta tarea son importantes, el uso de conceptos y caracteristicas de circuitos en serie y paralelo ayudan a simplificar el estudio y mejorar los calculos.
+
+6. BIBLIOGRAFIA
+areatecnologia.com. (2022). circuitos serie y paralelo. Areatecnologia.com. https://www.areatecnologia.com/TUTORIALES/CALCULO%20CIRCUITOS%20ELECTRICOS.htm
+
+Serie, paralelo y cortocircuito - Electricidad y electrónica - Picuino. (2013). Picuino.com. https://www.picuino.com/es/electric-serie-paralelo.html
+
+‌areatecnologia.com. (2022). Teorema de Thevenin y de Norton. Areatecnologia.com. https://www.areatecnologia.com/electricidad/teorema-de-thevenin-y-norton.html
+
+‌
